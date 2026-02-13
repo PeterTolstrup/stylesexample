@@ -1,16 +1,45 @@
 ---
+const {text, type, size} = Astro.props;
 ---
 
-<a href="#">
-    <p>Klik mig</p>
+<a href="#" class=`${type + " " + size}`>
+    <p>{text}</p>
 </a>
 <style>
     a {
         text-decoration: none;
         color: #fff;
-        background-color: rgb(130, 13, 13);
+        background-color: #01090F;
         display: inline-block;
-        padding: 0.25rem 0.5rem;
-        border-radius: 25%;
+        padding: 0.5rem 1rem;
+        border-radius: 16px;
+    }
+    p{
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: 0cqi;
+    }
+    .secondary {
+        background-color: #fff;
+        
+    }
+    .secondary p {
+        color: #01090F;
+        
+    }
+
+    .small {
+        font-size: smaller;
+        padding: 0.25rem .5rem;
+        border-radius: 12px;
+    }
+
+    .big {
+        padding: 1rem 1.5rem;
+        border-radius: 24px;
+    }
+
+    .big p {
+        font-size: 48px;
     }
 </style>

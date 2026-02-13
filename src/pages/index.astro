@@ -14,8 +14,25 @@ import Button from "../components/Button.astro";
     <title>Astro</title>
   </head>
   <body>
-    <h1>Styles Eksempel</h1>
-    <p>Her kommer der nogle fede <a href="#">styles</a></p>
-    <Button />
+    <header>
+      <h1>Styles Eksempel</h1>
+      <p>Her kommer der nogle fede <a href="#">styles</a></p>
+      <Button text="Ansæt mig" size="small"/>
+    </header>
+    <section class="inverted">
+      <h2>Her er en sketion</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur iusto, corrupti iste similique rerum omnis doloremque dolores incidunt ipsam tempora atque possimus eaque in animi, sed aspernatur ratione labore.</p>
+      <Button text="Klick mig" type="secondary" size="big"/>
+    </section>
   </body>
+  <style>
+    .inverted {
+      background-color: #343A3F;
+      color: #fff;
+    }
+    .inverted p {
+      background-color: #343A3F;
+      color: #CCCECF;
+    }
+  </style>
 </html>
